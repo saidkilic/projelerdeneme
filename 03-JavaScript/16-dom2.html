@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pink{
+            background-color: pink;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="baslık" class="name blue red">Merhaba</h1>
+
+    <script>
+
+        let stiller = document.querySelector("#baslık").classList;
+        console.log(stiller);
+        stiller.add("pink");
+
+        document.querySelector("#baslık").classList.add("yellow");
+        document.querySelector("#baslık").classList.remove("yellow");
+    </script>
+</body>
+</html>

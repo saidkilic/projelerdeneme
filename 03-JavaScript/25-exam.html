@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="txtFiyat" min="1" max="7">
+    <input type="button" value="Gün" onclick="hesapla()" id="btnhesapla">
+    <div id="lblSonuc"></div>
+
+    <script>
+        function hesapla(){
+            let number = document.querySelector("#txtFiyat").value;
+            let gun ;
+            switch(true){
+                case(number==1): 
+                gun = "pazar";
+                break;
+                case(number==2): 
+                gun = "pazartesi";
+                break;
+                case(number==3): 
+                gun = "salı";
+                break;
+                case(number==4): 
+                gun = "carsamba";
+                break;
+                case(number==5): 
+                gun = "persembe";
+                break;
+                case(number==6): 
+                gun = "cuma";
+                break;
+                case(number==7): 
+                gun = "cumartesi";
+                break;
+                
+
+            }
+            document.querySelector("#lblSonuc").innerHTML = gun;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" name="sayı1" id="sayı1" placeholder="Sayı 1" >
+    <input type="number" name="sayı2" id="sayı2" placeholder="Sayı 2" >
+    <button onclick ="Toplam()">Topla</button>
+    
+    <div id="sonuc"></div>
+    <script>
+        
+        function Toplam(){
+            let sayı1 = document.querySelector("#sayı1").value;
+            let sayı2 = document.querySelector("#sayı2").value;
+            let sonuc = Number(sayı1) + Number(sayı2);
+            alert(sonuc);
+            
+            document.querySelector("#sonuc").innerHTML =`sonuc : <b> ${sonuc} </b>`
+        }
+        
+    </script>
+</body>
+</html>
